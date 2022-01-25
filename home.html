@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    
+    #c1{
+    margin-top:10%;
+    margin-left:5%;
+    background-color: chocolate;
+    width:350px;
+    height:300px;
+    border-radius: 2%;
+    float: left;
+     }
+     #c2{
+    float:left;
+    margin-top: 10%;
+    margin-left: 5%;
+    background-color: chocolate;
+    width:350px;
+    height:300px;
+    border-radius: 2%;
+    }
+    #c3{
+    float:left;
+    margin-top: 10%;
+    margin-left: 5%;
+    background-color: chocolate;
+    width:350px;
+    height:300px;
+    border-radius: 2%;
+    }
+
+    h3{
+        color: aquamarine;
+        text-align: center;
+    }
+
+    </style>
+        
+    </head>
+    <body>
+    
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="http://localhost:3000/Users">Users</a>
+              <a href="#contact">Contact</a>
+              <a href="#about">About</a>
+            </div>
+          </div>
+          
+          <span style="font-size:30px;color:chocolate;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+          
+          <script>
+          function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+          }
+          
+          function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+          }
+           
+    
+          </script>
+        <h1 style="text-align: center; color: chocolate;">ONLINE COURSES</h1>    
+
+        <div id="c1"><br>
+            <h3>Web Development</h3>
+            <h4>Basics of Web Designing
+                To begin with, web designing course syllabus contains a basic introduction to familiarize 
+                students with the basics of designing a website to its tools, 
+                software applications and themes.</h4>
+            <button onclick="document.location='web_development.html'" id="button">Enrol here</button>
+        </div>
+        <div id="c2"><br>
+            <h3>Data Analytics</h3>
+            <h4>This course prepares students to gather, describe, and analyze data, and use advanced 
+                statistical tools to make decisions on operations, risk management, finance, marketing, etc.
+                Topics include probability, statistics, hypothesis testing, regression, clustering, 
+                decision trees, and forecasting.
+            </h4>
+            <button onclick="document.location='data_analytics.html'" id="button">Enrol here</button>
+        </div> 
+        <div id="c3"><br>
+            <h3>CyberSecurity</h3>
+            <h4>The Cyber Security course teaches the students how to identify the computer system 
+                vulnerabilities, to recognise digital exploitation and also prevent damage such as loss of data,
+                loss of money through viruses and how to implement security measures to prevent such an attack 
+                preemptively and counterattack against a cyber threat.
+                </h4>
+            <button onclick="document.location='cybersecurity.html'" id="button">Enrol here</button>
+        </div>
+    </body>
+</html>

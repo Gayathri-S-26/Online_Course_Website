@@ -1,0 +1,79 @@
+<html >
+<head>
+<title>CYBERSECURITY</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     
+
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="home.html">Home</a>
+      <a href="http://localhost:3000/Users">Users</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+  </div>
+  
+  <span style="font-size:30px;color:chocolate;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+  
+      <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+
+      function submitted(){
+          alert('Course registered successfully');
+          return true;
+      }
+      </script>
+    <h1 style="text-align: center;color: chocolate;">CYBERSECURITY</h1>
+<h4>
+Cyber Security is the study of how the computer systems and network can be protected from theft or damage to 
+their hardware, software or electronic data, and also the disruption of the services that they provide.
+
+The study of Cyber Security plays an important role because the use of social media is in demand these days, 
+and there should be control over the data that is shared by people.
+
+Cyberspace is a platform that safeguards data from delinquents and os accessed by anyone from any corner of the globe. Because cybersecurity is necessary, homeland security and various other sectors have incorporated cyberspace as a part of their program. Thus, the scope of cybersecurity is equally yet varied with a different focus across the globe
+
+Some of the essential topics covered in cybersecurity classes include:
+<ul>
+<li>Information management</li>
+<li>Computer systems</li>
+<li>Risk management</li>
+<li>Cyberlaw and ethics</li>
+<li>Technical report writing</li>
+<li>Investigation techniques</li>
+
+</ul>
+The course subjects cover the various subjects that help the students to understand and get knowledge of 
+the course in a better way. The course covers the subjects related to cybercrimes and the 
+cybersecurity-related to it. 
+</h4>
+<h2 style="text-align: center;color: chocolate;">Fill this form to enrol</h2>
+<div id="myform">
+<form action="http://localhost:7000" method="POST">
+    <div id="lab">
+    <br><h3 style="text-align: center;color: aquamarine;">ENROL</h3><br>
+
+<label>Name: </label>
+<input type="text" name="name" value="" /><br><br>
+<label>Email: </label>
+<input type="text" name="email" value="" /><br /><br>
+<label>Password:</label>
+<input type="password" name="password" value=""><br /><br>
+<label>Subject:</label>
+<input type="text" name="subject" value="CyberSecurity"><br /><br>
+<input type="submit" id="button" name="login" value="enrol" onclick="submitted()"/><br /><br>
+</div>
+</form>
+</div>
+</body>
+</html>

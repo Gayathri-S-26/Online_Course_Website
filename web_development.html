@@ -1,0 +1,74 @@
+<html >
+<head>
+<title>WEB DEVELOPMENT</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="home.html">Home</a>
+      <a href="http://localhost:3000/Users">Users</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+  </div>
+  
+  <span style="font-size:30px;color:chocolate;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+  
+      <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+
+      function submitted(){
+          alert('Course registered successfully');
+          return true;
+      }
+      </script>
+    <h1 style="text-align: center;color: chocolate;">WEB DEVELOPMENT</h1>
+
+    <h4>A general web designing course syllabus can be simply classified into the major concepts of web designing and programming languages as well as the tools and software required for designing web pages. Here are the important topics covered in Web Designing Syllabus:
+<ul>
+<li>Basics of Web Designing</li>
+<li>Multimedia and its Applications</li>
+<li>Web Technologies</li>
+<li>Introduction to Web Design & Applications</li>
+<li>Computer Graphics</li>
+<li>Mathematical Structure for Computer Science</li>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>Bootstrap</li>
+<li>Adobe Dreamweaver</li>
+<li>Adobe Flash</li>
+<li>Available Softwares for Graphic Designing</li>
+<li>Animation Techniques</li>
+      </ul>
+      </h4>
+<h2 style="text-align: center;color: chocolate;">Fill this form to enrol</h2>
+<div id="myform">
+<form action="http://localhost:7000" method="POST">
+    <div id="lab">
+    <br><h3 style="text-align: center;color: aquamarine;">ENROL</h3><br>
+
+<label>Name: </label>
+<input type="text" name="name" value="" /><br><br>
+<label>Email: </label>
+<input type="text" name="email" value="" /><br /><br>
+<label>Password:</label>
+<input type="password" name="password" value=""><br /><br>
+<label>Subject:</label>
+<input type="text" name="subject" value="Web Development"><br /><br>
+<input type="submit" id="button" name="login" value="enrol" onclick="submitted()"/><br /><br>
+</div>
+</form>
+</div>
+</body>
+</html>

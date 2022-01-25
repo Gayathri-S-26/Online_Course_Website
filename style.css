@@ -1,0 +1,76 @@
+body{
+    background-color:aquamarine;
+    font-family: Cambria;
+}
+#myform{
+    margin-top:5%;
+    margin-left:28%;
+    background-color: chocolate;
+    width:600px;
+    height:310px;
+    border-radius: 2%;
+}
+#lab{
+    margin-left:5%;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: chocolate;
+  background-color: chocolate;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+#button
+{
+align-items: center;
+justify-content: center;
+color: black; font-size: 15px; line-height: 15px; padding: 10px; border-radius: 20px;
+font-family: Georgia, serif;font-weight: normal; text-decoration: none; font-style: normal; 
+font-variant: normal; text-transform: none; 
+background-image: linear-gradient(to right, aquamarine 0%, aquamarine 50%, aquamarine 100%); 
+box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; border: 2px solid chocolate;
+display: inline-block;
+}

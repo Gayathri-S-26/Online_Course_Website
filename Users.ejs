@@ -1,0 +1,58 @@
+<html>
+<head>
+<style>
+body{
+  background-color: aquamarine;
+}
+table{
+border: 1px solid black;
+background-color: chocolate;
+color: aquamarine;
+margin-left: 20%;
+}
+
+th,td{
+padding: 10px;
+}
+
+th{
+  background-color: aquamarine;
+  color: chocolate;
+}
+
+</style>
+</head>
+<body>
+
+<h1 style="color: chocolate;text-align: center;">USERS DETAILS</h1><br>
+<table border='1'>
+<thead>
+<tr>
+  <th>Id</th>
+  <th>Name</th>
+  <th>Email</th>
+  <th>Password</th>
+  <th>Subject</th>
+</tr>
+</thead>
+<tbody>
+<%if (Users.length >0){ %>
+<% Users.forEach(function(row){ %>
+<tr>
+  <td><%= row._id %></td>
+  <td><%= row.Name %></td>
+  <td><%= row.Email %></td>
+  <td><%= row.Password %></td>
+  <td><%= row.Subject %></td>
+  
+</tr>
+<% })}else{ %>
+  <tr>
+      <td colspan="6">No Record Found</td>
+      
+    </tr>
+  <% } %>
+</tbody>
+</table>
+</body>
+</html>
