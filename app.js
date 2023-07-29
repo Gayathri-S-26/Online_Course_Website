@@ -17,7 +17,7 @@ subject=qs['subject'];
 
 res.write('<html><body style="background-color:aquamarine;color:chocolate;text-align:center;"><h1>Course registered successfully</h1><body></html>');
 var MongoClient=require('mongodb').MongoClient;
- var url="mongodb://localhost:27017/";
+ var url="mongodb+srv://gayathriselvaraj:3QGYjmH8sNskmDmn@cluster0.yprbnoz.mongodb.net/";
 
  MongoClient.connect(url,function(err,db){
      if(err) throw err;
